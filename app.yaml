@@ -1,0 +1,28 @@
+application: berkmanphp
+version: 2
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /images
+  static_dir: images
+
+- url: /include
+  static_dir: include
+
+- url: /layout
+  static_dir: layout
+
+- url: /other
+  static_dir: other
+
+- url: /uploads
+  static_dir: uploads
+
+- url: /.*
+  script: index.php
