@@ -1,5 +1,5 @@
 application: berkmanphp
-version: 2
+version: 4
 runtime: php55
 api_version: 1
 threadsafe: yes
@@ -24,5 +24,17 @@ handlers:
 - url: /uploads
   static_dir: uploads
 
-- url: /.*
+- url: /
   script: index.php
+
+- url: /login.php
+  script: login.php
+
+- url: /archive.php
+  script: archive.php
+
+- url: /logout.php
+  script: logout.php
+
+#- url: /include/header.php
+#  script: /include/header.php

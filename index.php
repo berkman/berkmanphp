@@ -1,15 +1,15 @@
 <?
 
-//include("include/include.php");
-
+//include("include.php");
+include ('header.php');
 
 // Register the session variables.
-session_start();
+//session_start();
 //session_register("username");
 //session_register("nickname");
 
-$u = $_SESSION['username'];
-$n = $_SESSION['nickname'];
+//$u = $_SESSION['username'];
+//$n = $_SESSION['nickname'];
 $motd = '';
 
 
@@ -40,12 +40,6 @@ $query4 = "SELECT username FROM login WHERE loggedin='y'";
 //$r4 = mysql_query($query4) or die ("Error with query4.");
 //$row4 = mysql_fetch_array($r4);
 //$logged = mysql_num_rows($r4);
-
-
-
-// Print the page header.
-include ('include/header.php');
-
 
 
 // Check for user's birthday.
@@ -216,6 +210,6 @@ if ($archive_link)
 
 
 // Print the page footer.
-include ('include/footer.php');
+include ('footer.php');
 
 ?>
